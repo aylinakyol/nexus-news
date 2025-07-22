@@ -23,7 +23,7 @@ const Posts: CollectionConfig = {
     },
     {
       type: 'relationship',
-      relationTo: 'authors',
+      relationTo: 'users',
       name: 'author',
       required: true,
     },

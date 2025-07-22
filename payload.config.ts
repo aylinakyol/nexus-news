@@ -2,11 +2,11 @@ import sharp from 'sharp'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload'
-import Posts from 'collections/Posts'
-import Authors from 'collections/Authors'
-import Categories from 'collections/Categories'
-import SiteSettings from 'collections/SiteSettings'
-import Media from 'collections/Media'
+import Posts from '@/collections/Posts'
+import Authors from '@/collections/Authors'
+import Categories from '@/collections/Categories'
+import SiteSettings from '@/collections/SiteSettings'
+import Media from '@/collections/Media'
 
 
 export default buildConfig({
@@ -50,7 +50,7 @@ export default buildConfig({
   // Your Payload secret - should be a complex and secure string, unguessable
   secret: process.env.PAYLOAD_SECRET || '',
 
-  cors: ['https://my-frontend.vercel.app', 'http://localhost:3000'], // Next.js frontend adresin
+  cors: ['https://nextjs-app-86rg.vercel.app', 'http://localhost:3000'], // Next.js frontend adresin
   
 
   // Whichever Database Adapter you're using should go here
