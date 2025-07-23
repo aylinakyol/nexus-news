@@ -166,6 +166,7 @@ export interface Post {
 export interface Author {
   id: string;
   name: string;
+  slug: string;
   avatar?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
@@ -331,6 +332,7 @@ export interface CategoriesSelect<T extends boolean = true> {
  */
 export interface AuthorsSelect<T extends boolean = true> {
   name?: T;
+  slug?: T;
   avatar?: T;
   updatedAt?: T;
   createdAt?: T;

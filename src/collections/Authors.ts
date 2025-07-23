@@ -1,4 +1,4 @@
-import { CollectionConfig } from "payload";
+import { CollectionConfig } from 'payload';
 
 const Authors: CollectionConfig = {
   slug: 'authors',
@@ -13,6 +13,13 @@ const Authors: CollectionConfig = {
       name: 'name',
       type: 'text',
       required: true,
+    },
+    {
+      name: 'slug',
+      type: 'text',
+      required: true,
+      unique: true,
+      index: true,
     },
     {
       name: 'avatar',
