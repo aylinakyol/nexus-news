@@ -15,6 +15,11 @@ export default buildConfig({
 
   // Define and configure your collections in this array
   collections: [Posts, Categories, Authors, Media],
+    upload: {
+    limits: {
+      fileSize: 5000000,
+    },
+  },
   globals: [SiteSettings],
   endpoints: [
     {
