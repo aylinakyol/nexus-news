@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload";
 
 const Authors: CollectionConfig = {
   slug: 'authors',
+  access: {
+    read: () => true,
+  },
   admin: {
     useAsTitle: 'name',
   },
